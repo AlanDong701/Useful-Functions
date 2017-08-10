@@ -1,0 +1,12 @@
+while (!isPrime(num))
+			{
+				for (int i = 2; i < Math.sqrt(num) + 1; i ++)
+				{
+					if (isPrime(i) && num % i == 0)
+					{
+						System.out.print(i + "x");
+						num /= i;
+						break;
+					}
+				}
+			}
